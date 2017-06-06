@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/reiya.matsuki.1990.09.23@gmail.com/RMPhotoLibrary'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'reiya.matsuki.1990.09.23@gmail.com' => 't-rmatsuki@valuecommerce.co.jp' }
+  s.author           = { 'reiya matsuki' => 'reiya.matsuki.1990.09.23@gmail.com' }
   s.source           = { :git => 'https://github.com/reiya.matsuki.1990.09.23@gmail.com/RMPhotoLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
