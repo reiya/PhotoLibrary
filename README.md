@@ -22,7 +22,7 @@ pod "RMPhotoLibrary"
 
 ## Author
 
-reiya.matsuki.1990.09.23@gmail.com, t-rmatsuki@valuecommerce.co.jp
+reiya.matsuki.1990.09.23@gmail.com
 
 ## License
 
