@@ -14,6 +14,9 @@
 		5FBD342DF6CC913D64BF9D780CA8AB40 /* Pods-RMPhotoLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCBB78E875AD853E1262F8B37AFD49 /* Pods-RMPhotoLibrary_Example-dummy.m */; };
 		6986BE2F0044A91E81E0EA9852DBF8B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7CFF51C04E6AD066754DF87C2D961D5C /* RMPhotoLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E62CD32BBFFFFDCC09AB179E5CC7CB5A /* RMPhotoLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBE38E341EE6AE680017CAA4 /* RMPPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE38E2E1EE69BFC0017CAA4 /* RMPPhotoView.swift */; };
+		BBE38E351EE6AE6B0017CAA4 /* RMPPhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE38E301EE69C120017CAA4 /* RMPPhotoCollectionView.swift */; };
+		BBE38E361EE6AE700017CAA4 /* RMPhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE38E321EE6AD860017CAA4 /* RMPhotoAlbumViewController.swift */; };
 		CF428B74414D18FFEDD12B07214AC7A2 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D41085785B723CD1D462A3952FF1127 /* ReplaceMe.swift */; };
 		E1C2FD59098A76549AFEDFDE4CC9AEC3 /* Pods-RMPhotoLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA7FA6E88C0969E57484B839E8B87CA /* Pods-RMPhotoLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F01C65135DEC544875B4BD73F56CE24E /* Pods-RMPhotoLibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1D0760736ED6D8A6453C5A16582B92 /* Pods-RMPhotoLibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,14 +35,14 @@
 /* Begin PBXFileReference section */
 		03749DEB0AB074167838587F8A6362AA /* RMPhotoLibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMPhotoLibrary.xcconfig; sourceTree = "<group>"; };
 		148AF670985C0CA82D98CBD3BE0D44FF /* Pods-RMPhotoLibrary_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMPhotoLibrary_Example-resources.sh"; sourceTree = "<group>"; };
-		1860541A0814E72F16FD074BCD82B24C /* RMPhotoLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RMPhotoLibrary.modulemap; sourceTree = "<group>"; };
+		1860541A0814E72F16FD074BCD82B24C /* RMPhotoLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RMPhotoLibrary.modulemap; sourceTree = "<group>"; };
 		1A2C6923BE9660E2DCEA9B9A618A5BAD /* Pods-RMPhotoLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMPhotoLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		228843202BD347DF4F35D9584585AEFB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		351187301F23AA01CB5159E6511D2644 /* RMPhotoLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMPhotoLibrary-prefix.pch"; sourceTree = "<group>"; };
 		39A30865F9A002353E0250F5A7D1D1C9 /* Pods-RMPhotoLibrary_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMPhotoLibrary_Tests-dummy.m"; sourceTree = "<group>"; };
 		3B1D0760736ED6D8A6453C5A16582B92 /* Pods-RMPhotoLibrary_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMPhotoLibrary_Example-umbrella.h"; sourceTree = "<group>"; };
-		3B6CC2EE53CFE1649527491B3257D1DE /* RMPhotoLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RMPhotoLibrary.framework; path = RMPhotoLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		48CCBF9AFCF221338FDB65E0ECB19A38 /* Pods-RMPhotoLibrary_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RMPhotoLibrary_Example.modulemap"; sourceTree = "<group>"; };
+		3B6CC2EE53CFE1649527491B3257D1DE /* RMPhotoLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RMPhotoLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48CCBF9AFCF221338FDB65E0ECB19A38 /* Pods-RMPhotoLibrary_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RMPhotoLibrary_Example.modulemap"; sourceTree = "<group>"; };
 		497078FB4F8479E1D3B1552A06097F50 /* Pods-RMPhotoLibrary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RMPhotoLibrary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5E5EB6C6C4AC6C6B2FD6E4A55FCC6428 /* Pods-RMPhotoLibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RMPhotoLibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -47,21 +50,24 @@
 		6D787A7D0D5D98303ED116CEE59938B0 /* Pods-RMPhotoLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMPhotoLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		88DE953DCBA54F1AB29A5BF81838A26F /* Pods-RMPhotoLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMPhotoLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8D41085785B723CD1D462A3952FF1127 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0DF9F8A3579AD4596519BC5D670A7AF /* Pods-RMPhotoLibrary_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RMPhotoLibrary_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A419D2F38F340E99C437839BB37155C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4767120433E08B91D130BF2262B8770 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69CAB86E7B17A6FFFBA3FEAA9AC3E70 /* Pods-RMPhotoLibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RMPhotoLibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A9C7C7E0601073A6C6BB63AD6310410C /* Pods-RMPhotoLibrary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMPhotoLibrary_Example-frameworks.sh"; sourceTree = "<group>"; };
 		ACEA2BB9F39D3C57ECE5D1DADA6FB728 /* Pods-RMPhotoLibrary_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMPhotoLibrary_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		BBE38E2E1EE69BFC0017CAA4 /* RMPPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPPhotoView.swift; sourceTree = "<group>"; };
+		BBE38E301EE69C120017CAA4 /* RMPPhotoCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPPhotoCollectionView.swift; sourceTree = "<group>"; };
+		BBE38E321EE6AD860017CAA4 /* RMPhotoAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPhotoAlbumViewController.swift; sourceTree = "<group>"; };
 		BEDCBB78E875AD853E1262F8B37AFD49 /* Pods-RMPhotoLibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMPhotoLibrary_Example-dummy.m"; sourceTree = "<group>"; };
 		C133A72BF162E80AA566B0EDBACDF01F /* RMPhotoLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RMPhotoLibrary-dummy.m"; sourceTree = "<group>"; };
-		D557484EB1D69408D04DB4CE8E92DB70 /* Pods_RMPhotoLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RMPhotoLibrary_Example.framework; path = "Pods-RMPhotoLibrary_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D557484EB1D69408D04DB4CE8E92DB70 /* Pods_RMPhotoLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMPhotoLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E62CD32BBFFFFDCC09AB179E5CC7CB5A /* RMPhotoLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMPhotoLibrary-umbrella.h"; sourceTree = "<group>"; };
 		E636F5382E5B7E5DC47EBDB704671D80 /* Pods-RMPhotoLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMPhotoLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EEA7FA6E88C0969E57484B839E8B87CA /* Pods-RMPhotoLibrary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMPhotoLibrary_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F2616EB397AD0CAC8AB3DB3997283FA7 /* Pods-RMPhotoLibrary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RMPhotoLibrary_Tests.modulemap"; sourceTree = "<group>"; };
-		F63BB2ACCA8BAE1155E66092BBCC6680 /* Pods_RMPhotoLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RMPhotoLibrary_Tests.framework; path = "Pods-RMPhotoLibrary_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2616EB397AD0CAC8AB3DB3997283FA7 /* Pods-RMPhotoLibrary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RMPhotoLibrary_Tests.modulemap"; sourceTree = "<group>"; };
+		F63BB2ACCA8BAE1155E66092BBCC6680 /* Pods_RMPhotoLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMPhotoLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				8D41085785B723CD1D462A3952FF1127 /* ReplaceMe.swift */,
+				BBE38E2E1EE69BFC0017CAA4 /* RMPPhotoView.swift */,
+				BBE38E301EE69C120017CAA4 /* RMPPhotoCollectionView.swift */,
+				BBE38E321EE6AD860017CAA4 /* RMPhotoAlbumViewController.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -129,7 +137,6 @@
 			children = (
 				1B4AC2B503B3D5C6B3BCBAC2602CBAA8 /* Classes */,
 			);
-			name = RMPhotoLibrary;
 			path = RMPhotoLibrary;
 			sourceTree = "<group>";
 		};
@@ -314,6 +321,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					4AEBCD76567DB69CD1C03D3769F9D390 = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -339,8 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE38E341EE6AE680017CAA4 /* RMPPhotoView.swift in Sources */,
+				BBE38E361EE6AE700017CAA4 /* RMPhotoAlbumViewController.swift in Sources */,
 				CF428B74414D18FFEDD12B07214AC7A2 /* ReplaceMe.swift in Sources */,
 				1E0EA825FD641AD76945EEB34925A784 /* RMPhotoLibrary-dummy.m in Sources */,
+				BBE38E351EE6AE6B0017CAA4 /* RMPPhotoCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +588,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D787A7D0D5D98303ED116CEE59938B0 /* Pods-RMPhotoLibrary_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -647,6 +663,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A2C6923BE9660E2DCEA9B9A618A5BAD /* Pods-RMPhotoLibrary_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
