@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## RMPhotoLibrary
 
-Copyright (c) 2017 reiya.matsuki.1990.09.23@gmail.com <t-rmatsuki@valuecommerce.co.jp>
+Copyright (c) 2017 reiya matsuki <reiya.matsuki.1990.09.23@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
