@@ -1,0 +1,22 @@
+{
+  "name": "RMPhotoLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of RMPhotoLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/reiya.matsuki.1990.09.23@gmail.com/RMPhotoLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "reiya.matsuki.1990.09.23@gmail.com": "t-rmatsuki@valuecommerce.co.jp"
+  },
+  "source": {
+    "git": "https://github.com/reiya.matsuki.1990.09.23@gmail.com/RMPhotoLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RMPhotoLibrary/Classes/**/*"
+}
