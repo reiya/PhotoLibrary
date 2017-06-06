@@ -1,0 +1,6 @@
+framework module RMPhotoLibrary {
+  umbrella header "RMPhotoLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

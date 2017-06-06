@@ -1,0 +1,16 @@
+PODS:
+  - RMPhotoLibrary (0.1.0)
+
+DEPENDENCIES:
+  - RMPhotoLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  RMPhotoLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RMPhotoLibrary: b68764bd740a3378180ec212d0e9a90898e5328a
+
+PODFILE CHECKSUM: 4236c6215de47bbb56c3be236adf53ccb9401a66
+
+COCOAPODS: 1.2.1
