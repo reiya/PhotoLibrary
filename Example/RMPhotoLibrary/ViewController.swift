@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import RMPhotoLibrary
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,RMPhotoAlbumViewControllerDelegate{
+    var photoEditVC: RMPhotoEditViewController!
+    var photoAlbumVC: RMPhotoAlbumViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        photoEditVC = self.childViewControllers[0] as! RMPhotoEditViewController
+        
+        photoAlbumVC = self.childViewControllers[1] as! RMPhotoAlbumViewController
+        photoAlbumVC.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func send() {
+        print("コールバックきた")
     }
-
+    
+    func sendImageView(imageView: UIImageView) {
+        photoEditVC.sendImage( imageView)
+        print("コールバックキターーー")
+    }
 }
-

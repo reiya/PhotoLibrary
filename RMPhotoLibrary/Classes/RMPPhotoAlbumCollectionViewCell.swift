@@ -31,7 +31,7 @@ class RMPPhotoAlbumCollectionViewCell: UICollectionViewCell {
                                 guard let wself = self, let outImage = image else {
                                     return
                                 }
-                                wself.photoImageView.image = image
+                                wself.photoImageView?.image = image
         })
     }
 }

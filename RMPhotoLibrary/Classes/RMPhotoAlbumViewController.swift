@@ -9,33 +9,50 @@
 import Foundation
 import Photos
 
-class RMPhotoAlbumViewController: UIViewController{
+public protocol RMPhotoAlbumViewControllerDelegate: class {
+    func sendImageView(imageView: UIImageView)
+    func send()
+}
+public extension RMPhotoAlbumViewControllerDelegate {
+    public func send(){
+        print("コールバックする")
+    }
+    public func sendImageView(imageView: UIImageView) {
+        print("Delegate not declared")
+    }
+}
+
+public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDelegate{
+    public weak var delegate: RMPhotoAlbumViewControllerDelegate!
+    public var photoEditVC:RMPhotoEditViewController!
+    
     @IBOutlet weak var collectionView: UICollectionView!
+    var collectionViewCell: RMPPhotoAlbumCollectionViewCell!
     
     var photoAssets: Array! = [PHAsset]()
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
+        //collectionView.register(RMPPhotoAlbumCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         setup()
         libraryRequestAuthorization()
     }
     
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     fileprivate func setup() {
-        collectionView.dataSource = self
         
         // UICollectionViewCellのマージン等の設定
-        let flowLayout: UICollectionViewFlowLayout! = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width / 3 - 4,
-                                     height: UIScreen.main.bounds.width / 3 - 4)
-        flowLayout.sectionInset = UIEdgeInsets(top: 8, left: 0, bottom: 0, right: 0)
-        flowLayout.minimumInteritemSpacing = 0
-        flowLayout.minimumLineSpacing = 6
-        
-        collectionView.collectionViewLayout = flowLayout
+//        let flowLayout: UICollectionViewFlowLayout! = UICollectionViewFlowLayout()
+//        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width / 3 - 4,
+//                                     height: UIScreen.main.bounds.width / 3 - 4)
+//        flowLayout.sectionInset = UIEdgeInsets(top: 8, left: 0, bottom: 0, right: 0)
+//        flowLayout.minimumInteritemSpacing = 0
+//        flowLayout.minimumLineSpacing = 6
+//        
+//        collectionView.collectionViewLayout = flowLayout
     }
     
     // カメラロールへのアクセス許可
@@ -65,8 +82,9 @@ class RMPhotoAlbumViewController: UIViewController{
                 return
             }
             wself.photoAssets.append(asset as PHAsset)
+            wself.collectionView.reloadData()
         })
-        collectionView.reloadData()
+        //collectionView.reloadData()
     }
     
     // カメラロールへのアクセスが拒否されている場合のアラート
@@ -100,16 +118,67 @@ class RMPhotoAlbumViewController: UIViewController{
             }
         }
     }
+    
+    
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
+//        return 50
+//    }
+    
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RMPPhotoAlbumCollectionViewCell
+//        let photoAsset = PHFetchResult.object(at: indexPath.item)
+//        print(photoAsset.description)
+//        print("画像")
+//        print( cell.photoImageView)
+        //editImageView.image = collectionViewCell.photoImageView.image
+        setConfigure(assets: photoAssets[indexPath.row])
+
+        delegate.send()
+    }
+    func setConfigure(assets: PHAsset) {
+        let manager = PHImageManager()
+        
+        manager.requestImage(for: assets,
+                             targetSize:CGSize(width: 100, height: 100),
+                             contentMode: .aspectFill,
+                             options: nil,
+                             resultHandler: { [weak self] (image, info) in
+                                guard let wself = self, let outImage = image else {
+                                    return
+                                }
+                                if let sendImage = image {
+                                    wself.delegate.sendImageView(imageView: UIImageView(image:image))
+                                }
+        })
+    }
 }
 
 extension RMPhotoAlbumViewController : UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photoAssets.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RMPPhotoAlbumCollectionViewCell
-        cell.setConfigure(assets: photoAssets[indexPath.row])
-        return cell
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RMPPhotoAlbumCollectionViewCell
+        collectionViewCell.setConfigure(assets: photoAssets[indexPath.row])
+        return collectionViewCell
     }
 }
+//extension RMPhotoAlbumViewController: UICollectionViewDelegate {
+//    func numberOfSections(in collectionView: UICollectionView) -> Int {
+//        return 1
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, layout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
+//        return 50
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let photoAsset = fetchResult.object(at: indexPath.item)
+//        print(photoAsset.description)
+//    }
+//}
