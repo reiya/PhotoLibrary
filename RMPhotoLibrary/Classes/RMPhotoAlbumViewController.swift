@@ -9,133 +9,107 @@
 import Foundation
 import Photos
 
-class RMPhotoAlbumViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class RMPhotoAlbumViewController: UIViewController{
+    @IBOutlet weak var collectionView: UICollectionView!
     
-//    @IBOutlet var cameraView : UIImageView!
-//    
-//    @IBOutlet var bCameraStart : UIButton!
-//    @IBOutlet var bSavePic : UIButton!
-//    @IBOutlet var bAlbum : UIButton!
-    
-    //@IBOutlet var label : UILabel!
-    
+    var photoAssets: Array! = [PHAsset]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //label.text = "Tap the [Start] to take a picture"
-        // フォトライブラリへのアクセスをリクエスト
-        PHPhotoLibrary.requestAuthorization { PHAuthorizationStatus in
-            
-        }
-        
-        let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.photoLibrary
-        
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary){
-            // インスタンスの作成
-            let cameraPicker = UIImagePickerController()
-            cameraPicker.sourceType = sourceType
-            cameraPicker.delegate = self
-            self.present(cameraPicker, animated: true, completion: nil)
-            
-//            label.text = "Tap the [Start] to save a picture"
-        }
-        else{
-           // label.text = "error"
-            
-        }
-        
-    }
-    
-    // カメラの撮影開始
-    @IBAction func cameraStart(_ sender : AnyObject) {
-        
-        let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.camera
-        // カメラが利用可能かチェック
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera){
-            // インスタンスの作成
-            let cameraPicker = UIImagePickerController()
-            cameraPicker.sourceType = sourceType
-            cameraPicker.delegate = self
-            self.present(cameraPicker, animated: true, completion: nil)
-            
-        }
-        else{
-            //label.text = "error"
-            
-        }
-    }
-    
-    //　撮影が完了時した時に呼ばれる
-    func imagePickerController(_ imagePicker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
-//            cameraView.contentMode = .scaleAspectFit
-//            cameraView.image = pickedImage
-            
-        }
-        
-        //閉じる処理
-        imagePicker.dismiss(animated: true, completion: nil)
-//        label.text = "Tap the [Save] to save a picture"
-        
-    }
-    
-    // 撮影がキャンセルされた時に呼ばれる
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
-//        label.text = "Canceled"
-    }
-    
-    
-    // 写真を保存
-    @IBAction func savePic(_ sender : AnyObject) {
-//        let image:UIImage! = cameraView.image
-//        
-//        if image != nil {
-//            UIImageWriteToSavedPhotosAlbum(image, self, #selector(ViewController.image(_:didFinishSavingWithError:contextInfo:)), nil)
-//        }
-//        else{
-//            label.text = "image Failed !"
-//        }
-        
-    }
-    
-    // 書き込み完了結果の受け取り
-    func image(_ image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutableRawPointer) {
-        print("1")
-        
-        if error != nil {
-            print(error.code)
-//            label.text = "Save Failed !"
-        }
-        else{
-//            label.text = "Save Succeeded"
-        }
-    }
-    
-    // アルバムを表示
-    @IBAction func showAlbum(_ sender : AnyObject) {
-        let sourceType:UIImagePickerControllerSourceType = UIImagePickerControllerSourceType.photoLibrary
-        
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary){
-            // インスタンスの作成
-            let cameraPicker = UIImagePickerController()
-            cameraPicker.sourceType = sourceType
-            cameraPicker.delegate = self
-            self.present(cameraPicker, animated: true, completion: nil)
-            
-//            label.text = "Tap the [Start] to save a picture"
-        }
-        else{
-//            label.text = "error"
-            
-        }
-        
+        setup()
+        libraryRequestAuthorization()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    fileprivate func setup() {
+        collectionView.dataSource = self
+        
+        // UICollectionViewCellのマージン等の設定
+        let flowLayout: UICollectionViewFlowLayout! = UICollectionViewFlowLayout()
+        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width / 3 - 4,
+                                     height: UIScreen.main.bounds.width / 3 - 4)
+        flowLayout.sectionInset = UIEdgeInsets(top: 8, left: 0, bottom: 0, right: 0)
+        flowLayout.minimumInteritemSpacing = 0
+        flowLayout.minimumLineSpacing = 6
+        
+        collectionView.collectionViewLayout = flowLayout
+    }
+    
+    // カメラロールへのアクセス許可
+    fileprivate func libraryRequestAuthorization() {
+        PHPhotoLibrary.requestAuthorization({ [weak self] status in
+            guard let wself = self else {
+                return
+            }
+            switch status {
+            case .authorized:
+                wself.getAllPhotosInfo()
+            case .denied:
+                wself.showDeniedAlert()
+            case .notDetermined:
+                print("NotDetermined")
+            case .restricted:
+                print("Restricted")
+            }
+        })
+    }
+    
+    // カメラロールから全て取得する
+    fileprivate func getAllPhotosInfo() {
+        let assets: PHFetchResult = PHAsset.fetchAssets(with: .image, options: nil)
+        assets.enumerateObjects({ [weak self] (asset, index, stop) -> Void in
+            guard let wself = self else {
+                return
+            }
+            wself.photoAssets.append(asset as PHAsset)
+        })
+        collectionView.reloadData()
+    }
+    
+    // カメラロールへのアクセスが拒否されている場合のアラート
+    fileprivate func showDeniedAlert() {
+        let alert: UIAlertController = UIAlertController(title: "エラー",
+                                                         message: "「写真」へのアクセスが拒否されています。設定より変更してください。",
+                                                         preferredStyle: .alert)
+        let cancel: UIAlertAction = UIAlertAction(title: "キャンセル",
+                                                  style: .cancel,
+                                                  handler: nil)
+        let ok: UIAlertAction = UIAlertAction(title: "設定画面へ",
+                                              style: .default,
+                                              handler: { [weak self] (action) -> Void in
+                                                guard let wself = self else {
+                                                    return
+                                                }
+                                                wself.transitionToSettingsApplition()
+        })
+        alert.addAction(cancel)
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    fileprivate func transitionToSettingsApplition() {
+        let url = URL(string: UIApplicationOpenSettingsURLString)
+        if let url = url {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                // Fallback on earlier versions
+            }
+        }
+    }
+}
+
+extension RMPhotoAlbumViewController : UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photoAssets.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RMPPhotoAlbumCollectionViewCell
+        cell.setConfigure(assets: photoAssets[indexPath.row])
+        return cell
     }
 }
