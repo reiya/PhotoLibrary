@@ -12,6 +12,7 @@ import RMPhotoLibrary
 class ViewController: UIViewController,RMPhotoAlbumViewControllerDelegate{
     var photoEditVC: RMPhotoEditViewController!
     var photoAlbumVC: RMPhotoAlbumViewController!
+    @IBOutlet weak var crapview: CropView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,11 @@ class ViewController: UIViewController,RMPhotoAlbumViewControllerDelegate{
         print("コールバックきた")
     }
     
-    func sendImageView(imageView: UIImageView) {
-        photoEditVC.sendImage( imageView)
+    func sendImage(image: UIImage) {
+//        photoEditVC.sendImage( imageView)
+        photoEditVC.image = image
+        photoEditVC.original()
+//        photoEditVC.cropAspectRatio = 9.0 / 16.0
         print("コールバックキターーー")
     }
 }

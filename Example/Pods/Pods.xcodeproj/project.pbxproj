@@ -19,6 +19,10 @@
 		BBE38E351EE6AE6B0017CAA4 /* RMPPhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE38E301EE69C120017CAA4 /* RMPPhotoCollectionView.swift */; };
 		BBE38E361EE6AE700017CAA4 /* RMPhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE38E321EE6AD860017CAA4 /* RMPhotoAlbumViewController.swift */; };
 		BBF43D421EE7947900D08E0F /* RMPPhotoAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF43D401EE7938000D08E0F /* RMPPhotoAlbumCollectionViewCell.swift */; };
+		BBF6AB881EE90155007FD51D /* CropRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF6AB841EE90155007FD51D /* CropRectView.swift */; };
+		BBF6AB891EE90155007FD51D /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF6AB851EE90155007FD51D /* CropView.swift */; };
+		BBF6AB8A1EE90155007FD51D /* ResizeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF6AB861EE90155007FD51D /* ResizeControl.swift */; };
+		BBF6AB8B1EE90155007FD51D /* UIImage+Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF6AB871EE90155007FD51D /* UIImage+Crop.swift */; };
 		CF428B74414D18FFEDD12B07214AC7A2 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D41085785B723CD1D462A3952FF1127 /* ReplaceMe.swift */; };
 		E1C2FD59098A76549AFEDFDE4CC9AEC3 /* Pods-RMPhotoLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA7FA6E88C0969E57484B839E8B87CA /* Pods-RMPhotoLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F01C65135DEC544875B4BD73F56CE24E /* Pods-RMPhotoLibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1D0760736ED6D8A6453C5A16582B92 /* Pods-RMPhotoLibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +68,10 @@
 		BBE38E301EE69C120017CAA4 /* RMPPhotoCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPPhotoCollectionView.swift; sourceTree = "<group>"; };
 		BBE38E321EE6AD860017CAA4 /* RMPhotoAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPhotoAlbumViewController.swift; sourceTree = "<group>"; };
 		BBF43D401EE7938000D08E0F /* RMPPhotoAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPPhotoAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		BBF6AB841EE90155007FD51D /* CropRectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropRectView.swift; sourceTree = "<group>"; };
+		BBF6AB851EE90155007FD51D /* CropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
+		BBF6AB861EE90155007FD51D /* ResizeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizeControl.swift; sourceTree = "<group>"; };
+		BBF6AB871EE90155007FD51D /* UIImage+Crop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Crop.swift"; sourceTree = "<group>"; };
 		BEDCBB78E875AD853E1262F8B37AFD49 /* Pods-RMPhotoLibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMPhotoLibrary_Example-dummy.m"; sourceTree = "<group>"; };
 		C133A72BF162E80AA566B0EDBACDF01F /* RMPhotoLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RMPhotoLibrary-dummy.m"; sourceTree = "<group>"; };
 		D557484EB1D69408D04DB4CE8E92DB70 /* Pods_RMPhotoLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RMPhotoLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +122,10 @@
 		1B4AC2B503B3D5C6B3BCBAC2602CBAA8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BBF6AB841EE90155007FD51D /* CropRectView.swift */,
+				BBF6AB851EE90155007FD51D /* CropView.swift */,
+				BBF6AB861EE90155007FD51D /* ResizeControl.swift */,
+				BBF6AB871EE90155007FD51D /* UIImage+Crop.swift */,
 				8D41085785B723CD1D462A3952FF1127 /* ReplaceMe.swift */,
 				BBE38E2E1EE69BFC0017CAA4 /* RMPPhotoView.swift */,
 				BBE38E301EE69C120017CAA4 /* RMPPhotoCollectionView.swift */,
@@ -359,8 +371,12 @@
 			files = (
 				BBE38E341EE6AE680017CAA4 /* RMPPhotoView.swift in Sources */,
 				BBE38E361EE6AE700017CAA4 /* RMPhotoAlbumViewController.swift in Sources */,
+				BBF6AB881EE90155007FD51D /* CropRectView.swift in Sources */,
 				CF428B74414D18FFEDD12B07214AC7A2 /* ReplaceMe.swift in Sources */,
 				1E0EA825FD641AD76945EEB34925A784 /* RMPhotoLibrary-dummy.m in Sources */,
+				BBF6AB8B1EE90155007FD51D /* UIImage+Crop.swift in Sources */,
+				BBF6AB8A1EE90155007FD51D /* ResizeControl.swift in Sources */,
+				BBF6AB891EE90155007FD51D /* CropView.swift in Sources */,
 				BBE38E351EE6AE6B0017CAA4 /* RMPPhotoCollectionView.swift in Sources */,
 				BB53C4341EE7BE8D00DC3DEA /* RMPhotoEditViewController.swift in Sources */,
 				BBF43D421EE7947900D08E0F /* RMPPhotoAlbumCollectionViewCell.swift in Sources */,
@@ -494,6 +510,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/RMPhotoLibrary/RMPhotoLibrary-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RMPhotoLibrary/Info.plist";
@@ -572,6 +592,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/RMPhotoLibrary/RMPhotoLibrary-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RMPhotoLibrary/Info.plist";

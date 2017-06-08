@@ -10,15 +10,15 @@ import Foundation
 import Photos
 
 public protocol RMPhotoAlbumViewControllerDelegate: class {
-    func sendImageView(imageView: UIImageView)
+    func sendImage(image: UIImage)
     func send()
 }
 public extension RMPhotoAlbumViewControllerDelegate {
     public func send(){
-        print("コールバックする")
+        
     }
-    public func sendImageView(imageView: UIImageView) {
-        print("Delegate not declared")
+    public func sendImage(image: UIImage) {
+        
     }
 }
 
@@ -33,7 +33,6 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        //collectionView.register(RMPPhotoAlbumCollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         setup()
         libraryRequestAuthorization()
     }
@@ -82,6 +81,8 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
                 return
             }
             wself.photoAssets.append(asset as PHAsset)
+            //最初の画像をセットする。
+            wself.setConfigure(assets: wself.photoAssets[0])
             wself.collectionView.reloadData()
         })
         //collectionView.reloadData()
@@ -130,11 +131,6 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
     
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RMPPhotoAlbumCollectionViewCell
-//        let photoAsset = PHFetchResult.object(at: indexPath.item)
-//        print(photoAsset.description)
-//        print("画像")
-//        print( cell.photoImageView)
-        //editImageView.image = collectionViewCell.photoImageView.image
         setConfigure(assets: photoAssets[indexPath.row])
 
         delegate.send()
@@ -143,7 +139,7 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
         let manager = PHImageManager()
         
         manager.requestImage(for: assets,
-                             targetSize:CGSize(width: 100, height: 100),
+                             targetSize:PHImageManagerMaximumSize,
                              contentMode: .aspectFill,
                              options: nil,
                              resultHandler: { [weak self] (image, info) in
@@ -151,7 +147,7 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
                                     return
                                 }
                                 if let sendImage = image {
-                                    wself.delegate.sendImageView(imageView: UIImageView(image:image))
+                                    wself.delegate.sendImage(image: image!)
                                 }
         })
     }
