@@ -24,8 +24,8 @@ class RMPPhotoAlbumCollectionViewCell: UICollectionViewCell {
         let manager = PHImageManager()
         
         manager.requestImage(for: assets,
-                             targetSize: frame.size,
-                             contentMode: .aspectFill,
+                             targetSize: PHImageManagerMaximumSize,//frame.size,
+                             contentMode: .aspectFit,
                              options: nil,
                              resultHandler: { [weak self] (image, info) in
                                 guard let wself = self, let outImage = image else {

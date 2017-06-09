@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'RMPhotoLibrary_Example' do
   pod 'RMPhotoLibrary', :path => '../'
+  pod 'Fusuma'
 
   target 'RMPhotoLibrary_Tests' do
     inherit! :search_paths

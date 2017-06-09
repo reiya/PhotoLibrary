@@ -1,7 +1,9 @@
 PODS:
+  - Fusuma (1.1.0)
   - RMPhotoLibrary (0.1.0)
 
 DEPENDENCIES:
+  - Fusuma
   - RMPhotoLibrary (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,8 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  RMPhotoLibrary: b68764bd740a3378180ec212d0e9a90898e5328a
+  Fusuma: 087dcf57cd0e8712d357dcf14559927da369642c
+  RMPhotoLibrary: 06d06d66b746562bae8f545239cb81beb8e01878
 
-PODFILE CHECKSUM: 4236c6215de47bbb56c3be236adf53ccb9401a66
+PODFILE CHECKSUM: cb45a6821c69ab1a42ba5ff0b7746e61703f6981
 
 COCOAPODS: 1.2.1

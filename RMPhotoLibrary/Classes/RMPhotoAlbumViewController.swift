@@ -83,14 +83,14 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
             wself.photoAssets.append(asset as PHAsset)
             //最初の画像をセットする。
             wself.setConfigure(assets: wself.photoAssets[0])
-            wself.collectionView.reloadData()
+            
         })
-        //collectionView.reloadData()
+        collectionView.reloadData()
     }
     
     // カメラロールへのアクセスが拒否されている場合のアラート
     fileprivate func showDeniedAlert() {
-        let alert: UIAlertController = UIAlertController(title: "エラー",
+        let alert: UIAlertController = UIAlertController(title: "アクセスエラー",
                                                          message: "「写真」へのアクセスが拒否されています。設定より変更してください。",
                                                          preferredStyle: .alert)
         let cancel: UIAlertAction = UIAlertAction(title: "キャンセル",

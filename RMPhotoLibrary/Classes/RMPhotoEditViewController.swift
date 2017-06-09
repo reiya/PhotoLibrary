@@ -15,11 +15,8 @@ public protocol RMPhotoEditViewControllerDelegate: class {
     func cropViewController(_ controller: RMPhotoEditViewController, didFinishCroppingImage image: UIImage, transform: CGAffineTransform, cropRect: CGRect)
 }
 
-public class RMPhotoEditViewController: UIViewController{
-    
-    @IBOutlet weak var editImageView: UIImageView!
-//    @IBOutlet weak var contentView: UIView!
-    
+public class RMPhotoEditViewController: UIViewController , CropViewDelegate{
+        
     open weak var delegate: RMPhotoEditViewControllerDelegate?
     open var image: UIImage? {
         didSet {
@@ -29,6 +26,16 @@ public class RMPhotoEditViewController: UIViewController{
     open var keepAspectRatio = false {
         didSet {
             cropView?.keepAspectRatio = keepAspectRatio
+        }
+    }
+    open var showsGridMajor = false{
+        didSet{
+            cropView?.showsGridMajor = showsGridMajor
+        }
+    }
+    open var showsGridMinor = false {
+        didSet {
+            cropView?.showsGridMinor = showsGridMinor
         }
     }
     open var cropAspectRatio: CGFloat = 0.0 {
@@ -107,7 +114,7 @@ public class RMPhotoEditViewController: UIViewController{
         if !imageCropRect.equalTo(CGRect.zero) {
             cropView?.imageCropRect = imageCropRect
         }
-        
+        //cropView?.showsGridMinor = showsGridMinor
         cropView?.keepAspectRatio = keepAspectRatio
     }
     
@@ -119,7 +126,7 @@ public class RMPhotoEditViewController: UIViewController{
         cropView?.resetCropRectAnimated(animated)
     }
     
-    func doneImage() {
+    open func doneImage() {
         if let image = cropView?.croppedImage {
             delegate?.cropViewController(self, didFinishCroppingImage: image)
             guard let rotation = cropView?.rotation else {
@@ -131,26 +138,13 @@ public class RMPhotoEditViewController: UIViewController{
             delegate?.cropViewController(self, didFinishCroppingImage: image, transform: rotation, cropRect: rect)
         }
     }
-    
-    open func original(){
-        guard let image = self.cropView?.image else {
-            return
+    open func rate(){
+        let ratio: CGFloat = 9.0 / 16.0
+        if var cropRect = self.cropView?.cropRect {
+            let width = cropRect.width
+            cropRect.size = CGSize(width: view.frame.width, height: view.frame.width * ratio)
+            self.cropView?.cropRect = cropRect
         }
-        guard var cropRect = self.cropView?.cropRect else {
-            return
-        }
-        let width = image.size.width
-        let height = image.size.height
-        let ratio: CGFloat
-        if width < height {
-            ratio = width / height
-            cropRect.size = CGSize(width: cropRect.height * ratio, height: cropRect.height)
-        } else {
-            ratio = height / width
-            cropRect.size = CGSize(width: cropRect.width, height: cropRect.width * ratio)
-        }
-//        self.cropView?.cropRect = cropRect
-        //self.cropView?.cropAspectRatio = 4.0 / 6.0// 9.0 / 16.0
     }
     
     func constrain(_ sender: UIBarButtonItem) {
@@ -247,11 +241,9 @@ public class RMPhotoEditViewController: UIViewController{
         cropViewCropRect.size = size
         cropView?.cropRect = cropViewCropRect
     }
-
-    public func sendImage(_ imageView: UIImageView) {
-        editImageView.image = imageView.image
-        print("image set ")
+    //Delegate
+    func cropViewDidEndimage() {
+        //rate()
     }
-    
 }
 

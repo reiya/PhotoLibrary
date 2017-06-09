@@ -9,11 +9,16 @@
 import UIKit
 import AVFoundation
 
+protocol CropViewDelegate: class {
+    func cropViewDidEndimage()
+}
+
 open class CropView: UIView, UIScrollViewDelegate, UIGestureRecognizerDelegate, CropRectViewDelegate {
+    weak var delegate: CropViewDelegate?
     open var image: UIImage? {
         didSet {
             if image != nil {
-                imageSize = image!.size
+                imageSize = CGSize(width: 300, height: 100)//image!.size
             }
             imageView?.removeFromSuperview()
             imageView = nil
@@ -33,6 +38,11 @@ open class CropView: UIView, UIScrollViewDelegate, UIGestureRecognizerDelegate, 
     }
     open var croppedImage: UIImage? {
         return image?.rotatedImageWithTransform(rotation, croppedToRect: zoomedCropRect())
+    }
+    open var showsGridMajor = false{
+        didSet {
+            cropRectView.showsGridMajor = showsGridMajor
+        }
     }
     open var keepAspectRatio = false {
         didSet {
@@ -77,12 +87,24 @@ open class CropView: UIView, UIScrollViewDelegate, UIGestureRecognizerDelegate, 
             resetCropRect()
             
             let scale = min(scrollView.frame.width / imageSize.width, scrollView.frame.height / imageSize.height)
+            print("スケール")
+            print(scale)
             let x = imageCropRect.minX * scale + scrollView.frame.minX
+            print("x座標")
+            print(x)
             let y = imageCropRect.minY * scale + scrollView.frame.minY
+            print("y座標")
+            print(y)
             let width = imageCropRect.width * scale
+            print("はば")
+            print(width)
             let height = imageCropRect.height * scale
+            print("高さ")
+            print(height)
             
             let rect = CGRect(x: x, y: y, width: width, height: height)
+            print("レクとrect")
+            print(rect)
             let intersection = rect.intersection(scrollView.frame)
             
             if !intersection.isNull {
@@ -134,6 +156,8 @@ open class CropView: UIView, UIScrollViewDelegate, UIGestureRecognizerDelegate, 
         backgroundColor = UIColor.clear
         
         scrollView = UIScrollView(frame: bounds)
+        print("スクロールビュー")
+        print(scrollView.frame)
         scrollView.delegate = self
         scrollView.autoresizingMask = [.flexibleTopMargin, .flexibleLeftMargin, .flexibleBottomMargin, .flexibleRightMargin]
         scrollView.backgroundColor = UIColor.clear
@@ -213,6 +237,8 @@ open class CropView: UIView, UIScrollViewDelegate, UIGestureRecognizerDelegate, 
         }
         
         if !resizing {
+            print("スクロールビューのフレーム")
+            print(scrollView.frame)
             layoutCropRectViewWithCropRect(scrollView.frame)
             if self.interfaceOrientation != interfaceOrientation {
                 zoomToCropRect(scrollView.frame)
@@ -275,6 +301,7 @@ open class CropView: UIView, UIScrollViewDelegate, UIGestureRecognizerDelegate, 
         imageSize = image.size
         return image.rotatedImageWithTransform(rotation, croppedToRect: zoomedCropRect())
     }
+    open var showsGridMinor = true
     
     func handleRotation(_ gestureRecognizer: UIRotationGestureRecognizer) {
         if let imageView = imageView {
@@ -286,7 +313,7 @@ open class CropView: UIView, UIScrollViewDelegate, UIGestureRecognizerDelegate, 
         
         switch gestureRecognizer.state {
         case .began, .changed:
-            cropRectView.showsGridMinor = true
+            cropRectView.showsGridMinor = showsGridMinor
         default:
             cropRectView.showsGridMinor = false
         }
@@ -315,14 +342,17 @@ open class CropView: UIView, UIScrollViewDelegate, UIGestureRecognizerDelegate, 
     }
     
     fileprivate func setupZoomingView() {
-        let cropRect = AVMakeRect(aspectRatio: imageSize, insideRect: insetRect)
-        
+//        let cropRect = AVMakeRect(aspectRatio: imageSize, insideRect: insetRect)
+        let cropRect = CGRect(x: 0, y: 0, width: 300, height: 100)
         scrollView.frame = cropRect
+        print("スクロールビュー　cropRect")
+        print(scrollView.frame)
         scrollView.contentSize = cropRect.size
         
         zoomingView = UIView(frame: scrollView.bounds)
         zoomingView?.backgroundColor = .clear
         scrollView.addSubview(zoomingView!)
+        delegate?.cropViewDidEndimage()
     }
 
     fileprivate func setupImageView() {
