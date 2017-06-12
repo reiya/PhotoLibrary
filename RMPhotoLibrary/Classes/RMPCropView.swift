@@ -20,7 +20,7 @@ open class RMPCropView: UIView {
     }
     
     func setScrollview(){
-        if var scrollView = self.scrollView{
+        if  scrollView != nil{
             let vWidth = self.frame.width
             let vHeight = self.frame.height
             scrollView.frame = CGRect(x:0, y:0, width:Int(vWidth), height:Int(vHeight))
@@ -54,10 +54,6 @@ open class RMPCropView: UIView {
             if imageView != nil{
                 imageView.removeFromSuperview()
             }
-            let rate = image.size.width / image.size.height
-            let vWidth = self.frame.width
-            let vHeight = self.frame.height
-            let vRate = vWidth / vHeight
             
             scrollView.contentSize = CGSize(width: image.size.width, height: image.size.height)
             scrollView.contentMode = .scaleAspectFill

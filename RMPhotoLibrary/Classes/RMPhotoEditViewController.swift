@@ -141,7 +141,7 @@ public class RMPhotoEditViewController: UIViewController , CropViewDelegate{
     open func rate(){
         let ratio: CGFloat = 9.0 / 16.0
         if var cropRect = self.cropView?.cropRect {
-            let width = cropRect.width
+            
             cropRect.size = CGSize(width: view.frame.width, height: view.frame.width * ratio)
             self.cropView?.cropRect = cropRect
         }

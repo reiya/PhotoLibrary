@@ -143,10 +143,10 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
                              contentMode: .aspectFill,
                              options: nil,
                              resultHandler: { [weak self] (image, info) in
-                                guard let wself = self, let outImage = image else {
+                                guard let wself = self, let _ = image else {
                                     return
                                 }
-                                if let sendImage = image {
+                                if image != nil {
                                     wself.delegate.sendImage(image: image!)
                                 }
         })

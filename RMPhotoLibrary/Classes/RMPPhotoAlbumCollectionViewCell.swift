@@ -28,7 +28,7 @@ class RMPPhotoAlbumCollectionViewCell: UICollectionViewCell {
                              contentMode: .aspectFit,
                              options: nil,
                              resultHandler: { [weak self] (image, info) in
-                                guard let wself = self, let outImage = image else {
+                                guard let wself = self, let _ = image else {
                                     return
                                 }
                                 wself.photoImageView?.image = image
