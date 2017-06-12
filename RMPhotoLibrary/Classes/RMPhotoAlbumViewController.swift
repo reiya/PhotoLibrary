@@ -44,14 +44,14 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
     fileprivate func setup() {
         
         // UICollectionViewCellのマージン等の設定
-//        let flowLayout: UICollectionViewFlowLayout! = UICollectionViewFlowLayout()
-//        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width / 3 - 4,
-//                                     height: UIScreen.main.bounds.width / 3 - 4)
-//        flowLayout.sectionInset = UIEdgeInsets(top: 8, left: 0, bottom: 0, right: 0)
-//        flowLayout.minimumInteritemSpacing = 0
-//        flowLayout.minimumLineSpacing = 6
-//        
-//        collectionView.collectionViewLayout = flowLayout
+        let flowLayout: UICollectionViewFlowLayout! = UICollectionViewFlowLayout()
+        flowLayout.itemSize = CGSize(width: 70 ,
+                                     height: 70 )
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        flowLayout.minimumInteritemSpacing = 0
+        flowLayout.minimumLineSpacing = 0
+        
+        collectionView.collectionViewLayout = flowLayout
     }
     
     // カメラロールへのアクセス許可
@@ -125,16 +125,13 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
         return 1
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
-//        return 50
-//    }
-    
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RMPPhotoAlbumCollectionViewCell
         setConfigure(assets: photoAssets[indexPath.row])
 
         delegate.send()
     }
+    
     func setConfigure(assets: PHAsset) {
         let manager = PHImageManager()
         

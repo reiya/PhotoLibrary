@@ -172,6 +172,31 @@
 			path = RMPhotoLibrary;
 			sourceTree = "<group>";
 		};
+		BBDFD3841EEE76BE002BB74D /* PhotoCrop */ = {
+			isa = PBXGroup;
+			children = (
+				695F613AD3A7BF04CAC4FB1452254DFD /* RMPhotoEditSimpleViewController.swift */,
+				0B097D3021AA498EEF03B4C40E1BCA67 /* RMPhotoEditViewController.swift */,
+				C22C03C5CE0BEDE7F43E1313B6FC5186 /* CropRectView.swift */,
+				D5B9C4CE299A7146DBCC40C7F79DF1BC /* CropView.swift */,
+				22C1128761C5BDF88B9104788C0430D4 /* ResizeControl.swift */,
+				294743996FDDF30C77014AAF414709C8 /* RMPCropView.swift */,
+				17F9E68FF276CD8D56E60D50855FA2B6 /* UIImage+Crop.swift */,
+			);
+			name = PhotoCrop;
+			sourceTree = "<group>";
+		};
+		BBDFD3851EEE76DD002BB74D /* PhotoAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				91DE31AD5B032EBEB163F4414978040A /* RMPhotoAlbumViewController.swift */,
+				FCAFECC61BECA1489C20BD23668DE076 /* RMPPhotoAlbumCollectionViewCell.swift */,
+				C29CD8EABD66EC67F36C8B63CB7524A0 /* RMPPhotoCollectionView.swift */,
+				A8E54222BE9B8013724250D3A688CEE0 /* RMPPhotoView.swift */,
+			);
+			name = PhotoAlbum;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,17 +262,8 @@
 		FA57FB9969EB6098B400E1488B504F39 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C22C03C5CE0BEDE7F43E1313B6FC5186 /* CropRectView.swift */,
-				D5B9C4CE299A7146DBCC40C7F79DF1BC /* CropView.swift */,
-				22C1128761C5BDF88B9104788C0430D4 /* ResizeControl.swift */,
-				294743996FDDF30C77014AAF414709C8 /* RMPCropView.swift */,
-				91DE31AD5B032EBEB163F4414978040A /* RMPhotoAlbumViewController.swift */,
-				695F613AD3A7BF04CAC4FB1452254DFD /* RMPhotoEditSimpleViewController.swift */,
-				0B097D3021AA498EEF03B4C40E1BCA67 /* RMPhotoEditViewController.swift */,
-				FCAFECC61BECA1489C20BD23668DE076 /* RMPPhotoAlbumCollectionViewCell.swift */,
-				C29CD8EABD66EC67F36C8B63CB7524A0 /* RMPPhotoCollectionView.swift */,
-				A8E54222BE9B8013724250D3A688CEE0 /* RMPPhotoView.swift */,
-				17F9E68FF276CD8D56E60D50855FA2B6 /* UIImage+Crop.swift */,
+				BBDFD3851EEE76DD002BB74D /* PhotoAlbum */,
+				BBDFD3841EEE76BE002BB74D /* PhotoCrop */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

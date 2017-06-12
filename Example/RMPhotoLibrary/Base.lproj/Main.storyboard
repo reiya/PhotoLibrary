@@ -105,7 +105,7 @@
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="uVS-YA-s8U" customClass="RMPPhotoAlbumCollectionViewCell" customModule="RMPhotoLibrary">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -116,10 +116,10 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="dyO-oH-GR7" secondAttribute="bottom" id="5Bh-0o-oEh"/>
-                                            <constraint firstAttribute="trailing" secondItem="dyO-oH-GR7" secondAttribute="trailing" id="75Z-Mb-9EA"/>
-                                            <constraint firstItem="dyO-oH-GR7" firstAttribute="leading" secondItem="uVS-YA-s8U" secondAttribute="leading" id="JWe-Hx-97f"/>
-                                            <constraint firstItem="dyO-oH-GR7" firstAttribute="top" secondItem="uVS-YA-s8U" secondAttribute="top" id="SFP-Cr-QBa"/>
+                                            <constraint firstAttribute="bottom" secondItem="dyO-oH-GR7" secondAttribute="bottom" id="1tb-52-Van"/>
+                                            <constraint firstAttribute="trailing" secondItem="dyO-oH-GR7" secondAttribute="trailing" id="Drk-pv-YsK"/>
+                                            <constraint firstItem="dyO-oH-GR7" firstAttribute="top" secondItem="uVS-YA-s8U" secondAttribute="top" id="Wpg-uX-erI"/>
+                                            <constraint firstItem="dyO-oH-GR7" firstAttribute="leading" secondItem="uVS-YA-s8U" secondAttribute="leading" id="clE-UF-91x"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="photoImageView" destination="dyO-oH-GR7" id="YZZ-Xa-wQT"/>

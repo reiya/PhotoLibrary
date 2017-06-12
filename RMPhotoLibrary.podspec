@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   #s.description      = 
 
-  s.homepage         = 'https://github.com/reiya.matsuki.1990.09.23@gmail.com/RMPhotoLibrary'
+  s.homepage         = 'https://github.com/reiya/PhotoLibrary'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'reiya matsuki' => 'reiya.matsuki.1990.09.23@gmail.com' }
