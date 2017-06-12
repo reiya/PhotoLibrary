@@ -7,141 +7,86 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13FD4829C1935D33FF0B0E858B84482D /* FSVideoCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4762C86774178F707DCE9F3ABA2DFDF5 /* FSVideoCameraView.xib */; };
-		17A289BEA8EB908CBB7C5F86CA034EFD /* RMPPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CB604383B6CD861E33C2A983449917 /* RMPPhotoView.swift */; };
-		1C82A350630273F914125DBDEA52F683 /* FSAlbumView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D85845D4FCEF0FBFACBA02ED26D78942 /* FSAlbumView.xib */; };
-		231223AA946BAEDF7401CB69A3A23E1A /* RMPPhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35A75985359E3B8A95101F0021F7CA5 /* RMPPhotoCollectionView.swift */; };
-		29D80DC446204A2A7FC052E538CDA32F /* RMPhotoLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C133A72BF162E80AA566B0EDBACDF01F /* RMPhotoLibrary-dummy.m */; };
+		00008792C3181DCB7E06B2F74AD0CE52 /* RMPhotoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B097D3021AA498EEF03B4C40E1BCA67 /* RMPhotoEditViewController.swift */; };
+		07169488FD3A1F6998B0485F8D9454FD /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B9C4CE299A7146DBCC40C7F79DF1BC /* CropView.swift */; };
+		0A41BE1F6D3B3C9748DBDA0BB95CC0A3 /* CropRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22C03C5CE0BEDE7F43E1313B6FC5186 /* CropRectView.swift */; };
+		25217B0408A25C05117C2251057F7C46 /* RMPPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E54222BE9B8013724250D3A688CEE0 /* RMPPhotoView.swift */; };
+		2725AF61D3169F030E2A2F61125C2BCE /* RMPhotoEditSimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695F613AD3A7BF04CAC4FB1452254DFD /* RMPhotoEditSimpleViewController.swift */; };
+		2747F2898E85FBD5C4DDA255DB2AD2C3 /* ResizeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C1128761C5BDF88B9104788C0430D4 /* ResizeControl.swift */; };
 		31FE8F58599BAB89FFD8B5BBF78C87CC /* Pods-RMPhotoLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A30865F9A002353E0250F5A7D1D1C9 /* Pods-RMPhotoLibrary_Tests-dummy.m */; };
-		337EBB7E279C5D1697601D3C6A696A46 /* FusumaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868F65959F4ECC606C4AA1D8BAA253B /* FusumaViewController.swift */; };
-		37D4EF5938F8495CE32638F8BEB53550 /* FSAlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CE3667932A9C65A8CB78A2C09DA7AB /* FSAlbumViewCell.swift */; };
-		4119647E4D57365A2BB57EFB82E76116 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		43950B8A9095FF0BF33D1F286579CAA3 /* ResizeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1485A3F141FE57DC4B779DA483857254 /* ResizeControl.swift */; };
-		4739C512EE572762EEA50CE62A8792FB /* RMPhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFE40C8943C74EA34D80A011307F382 /* RMPhotoAlbumViewController.swift */; };
-		484B8C39828B296D71146C51A0904FC7 /* Fusuma-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAE18599124DC703CCBF6577DE56716 /* Fusuma-dummy.m */; };
-		539BBDFC2BDD86B65E0C73CE86859D52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		5876F184D9754E4DFBAD67EEF32FCF9C /* FSVideoCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614C5C315C9F67A7A273F94BB4035A30 /* FSVideoCameraView.swift */; };
-		61B4EA78FE2018BBF608279AC88D153B /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA818C7EF3E5050821B52AE5D8BFFE1 /* CropView.swift */; };
-		68519EE36E8C5FD508B1DC18E248B666 /* RMPhotoLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E62CD32BBFFFFDCC09AB179E5CC7CB5A /* RMPhotoLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BA31EDEFA58B20A81A99CCD5A3CB433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		50B1F1BDD97C4C6567E5311241E8E779 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5FBD342DF6CC913D64BF9D780CA8AB40 /* Pods-RMPhotoLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCBB78E875AD853E1262F8B37AFD49 /* Pods-RMPhotoLibrary_Example-dummy.m */; };
+		67036EA06C367063C0B1269F448D7084 /* RMPhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31AD5B032EBEB163F4414978040A /* RMPhotoAlbumViewController.swift */; };
 		6986BE2F0044A91E81E0EA9852DBF8B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		6BBB58832D4274B411F546731324F9BD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A2526227873CD7F8D56B4732A28F37 /* ReplaceMe.swift */; };
-		76C218BD1C4FED73A5D8DE0B44133A10 /* FSImageCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B443A557971434C990E65B8A5AC33 /* FSImageCropView.swift */; };
-		7F67F532AE76F2FF3F2288F3A8691AD0 /* RMPhotoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740766154CACD70EFE2F37C60C39A790 /* RMPhotoEditViewController.swift */; };
-		8126CCD976D0EC592491733FE0BF549B /* UIImage+Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C8ECD69848B454C28733DFAC38420 /* UIImage+Crop.swift */; };
-		8A3EFC954112A2E8A32A12493300D21E /* CropRectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88904E45871F32675657B2CA60D6ED5A /* CropRectView.swift */; };
-		8CCE1B9DBF44CDBDCE1F6B87C0A89079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		97D850D3836A89967D5A350E84996568 /* FSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B749E25F5D04FB453503A7AB07DF99 /* FSConstants.swift */; };
-		98C0F05CF40E7E1C111B0599ABE5BCAD /* FSAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9E400F4EBB40F53F48F01359FD2AAD /* FSAlbumViewCell.xib */; };
-		AA87C8542F368CC301BCF815CACF5850 /* Fusuma-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C76C199A1A5705200C941C67310AF5E0 /* Fusuma-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B62C192F6890740E5B439019D04ED009 /* Pods-RMPhotoLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDCBB78E875AD853E1262F8B37AFD49 /* Pods-RMPhotoLibrary_Example-dummy.m */; };
-		C5C88F4AB62FA845795ACAE292A05E5B /* FusumaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB54CCB79E3F33C1BEE9C023741D3B8F /* FusumaViewController.xib */; };
-		CC0DAD678A2792CD70B87FA5835C379D /* Pods-RMPhotoLibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1D0760736ED6D8A6453C5A16582B92 /* Pods-RMPhotoLibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC8B2CD64AE5925518C1FD441C723E77 /* FSAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD716438461F9C44A473E55C1BA39E /* FSAlbumView.swift */; };
-		E1133897E27D38F33845EC57D4E8D9BB /* RMPPhotoAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DDBCE83F1EBC8C775E1CD157540207 /* RMPPhotoAlbumCollectionViewCell.swift */; };
+		6EBE8856821CE42C28032F07D052DB68 /* RMPCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294743996FDDF30C77014AAF414709C8 /* RMPCropView.swift */; };
+		7CFF51C04E6AD066754DF87C2D961D5C /* RMPhotoLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E62CD32BBFFFFDCC09AB179E5CC7CB5A /* RMPhotoLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9140757166FC8579AFA7DCA9EA5EF34C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D8E51FF8A3C4799C8AF9F6CEE1F810 /* ReplaceMe.swift */; };
+		9558C3ECAA2A2D98490CE351472811FD /* RMPPhotoAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFECC61BECA1489C20BD23668DE076 /* RMPPhotoAlbumCollectionViewCell.swift */; };
+		A6C1E6B2A2A81E9B4808881C1C4E912B /* RMPPhotoCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29CD8EABD66EC67F36C8B63CB7524A0 /* RMPPhotoCollectionView.swift */; };
+		C047F99C229B5DF456D6FFC0213D4AFD /* RMPhotoLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C133A72BF162E80AA566B0EDBACDF01F /* RMPhotoLibrary-dummy.m */; };
 		E1C2FD59098A76549AFEDFDE4CC9AEC3 /* Pods-RMPhotoLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA7FA6E88C0969E57484B839E8B87CA /* Pods-RMPhotoLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E76B14332EA4BF464EBA72C31769A619 /* FSCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABF778C0F45E2022CBE3AA9BFF36176C /* FSCameraView.xib */; };
-		E8CD91CC081DE8166DB3964B70DD91F3 /* FSCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DFC44AFE195F73155317D6DF9A1AB4 /* FSCameraView.swift */; };
-		F8F2B8EF3A92B1E031FA17F874B40D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 427FDC4E6130005591A94B287587AC3B /* Assets.xcassets */; };
+		EE2F2B0C93088A36D651609AF69B70B7 /* UIImage+Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F9E68FF276CD8D56E60D50855FA2B6 /* UIImage+Crop.swift */; };
+		F01C65135DEC544875B4BD73F56CE24E /* Pods-RMPhotoLibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B1D0760736ED6D8A6453C5A16582B92 /* Pods-RMPhotoLibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1A55B101482989E855936B7CAE5C7542 /* PBXContainerItemProxy */ = {
+		7DD42537270075313A4F82B499CFE542 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3E0D8640A124012AB6F0A9F775A38285;
-			remoteInfo = Fusuma;
-		};
-		EC8996BAF5D6810C23731DEEC9634F27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6BA2CF895E2ADB088120590A898005F0;
+			remoteGlobalIDString = 8758B43A7BC5A9CA75E89E2C327D1D69;
 			remoteInfo = RMPhotoLibrary;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03749DEB0AB074167838587F8A6362AA /* RMPhotoLibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RMPhotoLibrary.xcconfig; sourceTree = "<group>"; };
-		1485A3F141FE57DC4B779DA483857254 /* ResizeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResizeControl.swift; sourceTree = "<group>"; };
+		0B097D3021AA498EEF03B4C40E1BCA67 /* RMPhotoEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPhotoEditViewController.swift; sourceTree = "<group>"; };
 		148AF670985C0CA82D98CBD3BE0D44FF /* Pods-RMPhotoLibrary_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMPhotoLibrary_Example-resources.sh"; sourceTree = "<group>"; };
+		17F9E68FF276CD8D56E60D50855FA2B6 /* UIImage+Crop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Crop.swift"; sourceTree = "<group>"; };
 		1860541A0814E72F16FD074BCD82B24C /* RMPhotoLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RMPhotoLibrary.modulemap; sourceTree = "<group>"; };
 		1A2C6923BE9660E2DCEA9B9A618A5BAD /* Pods-RMPhotoLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMPhotoLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		228843202BD347DF4F35D9584585AEFB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F36177531A733C3D546B1C9C606C974 /* Fusuma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fusuma.framework; path = Fusuma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F9E400F4EBB40F53F48F01359FD2AAD /* FSAlbumViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSAlbumViewCell.xib; path = Sources/FSAlbumViewCell.xib; sourceTree = "<group>"; };
+		22C1128761C5BDF88B9104788C0430D4 /* ResizeControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResizeControl.swift; sourceTree = "<group>"; };
+		294743996FDDF30C77014AAF414709C8 /* RMPCropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPCropView.swift; sourceTree = "<group>"; };
 		351187301F23AA01CB5159E6511D2644 /* RMPhotoLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMPhotoLibrary-prefix.pch"; sourceTree = "<group>"; };
 		39A30865F9A002353E0250F5A7D1D1C9 /* Pods-RMPhotoLibrary_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMPhotoLibrary_Tests-dummy.m"; sourceTree = "<group>"; };
 		3B1D0760736ED6D8A6453C5A16582B92 /* Pods-RMPhotoLibrary_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMPhotoLibrary_Example-umbrella.h"; sourceTree = "<group>"; };
-		427FDC4E6130005591A94B287587AC3B /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/Assets.xcassets; sourceTree = "<group>"; };
-		44CE3667932A9C65A8CB78A2C09DA7AB /* FSAlbumViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSAlbumViewCell.swift; path = Sources/FSAlbumViewCell.swift; sourceTree = "<group>"; };
-		4762C86774178F707DCE9F3ABA2DFDF5 /* FSVideoCameraView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSVideoCameraView.xib; path = Sources/FSVideoCameraView.xib; sourceTree = "<group>"; };
+		3B6CC2EE53CFE1649527491B3257D1DE /* RMPhotoLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RMPhotoLibrary.framework; path = RMPhotoLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CCBF9AFCF221338FDB65E0ECB19A38 /* Pods-RMPhotoLibrary_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RMPhotoLibrary_Example.modulemap"; sourceTree = "<group>"; };
 		497078FB4F8479E1D3B1552A06097F50 /* Pods-RMPhotoLibrary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RMPhotoLibrary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5E5EB6C6C4AC6C6B2FD6E4A55FCC6428 /* Pods-RMPhotoLibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RMPhotoLibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		614C5C315C9F67A7A273F94BB4035A30 /* FSVideoCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSVideoCameraView.swift; path = Sources/FSVideoCameraView.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6868F65959F4ECC606C4AA1D8BAA253B /* FusumaViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FusumaViewController.swift; path = Sources/FusumaViewController.swift; sourceTree = "<group>"; };
 		69088EB1662B4652F0DCA6F38FC04E8F /* Pods-RMPhotoLibrary_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMPhotoLibrary_Tests-resources.sh"; sourceTree = "<group>"; };
+		695F613AD3A7BF04CAC4FB1452254DFD /* RMPhotoEditSimpleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPhotoEditSimpleViewController.swift; sourceTree = "<group>"; };
 		6D787A7D0D5D98303ED116CEE59938B0 /* Pods-RMPhotoLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMPhotoLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6F1B443A557971434C990E65B8A5AC33 /* FSImageCropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSImageCropView.swift; path = Sources/FSImageCropView.swift; sourceTree = "<group>"; };
-		7253081D10D3D5883751DA0068EEE493 /* Fusuma.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Fusuma.xcconfig; sourceTree = "<group>"; };
-		740766154CACD70EFE2F37C60C39A790 /* RMPhotoEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPhotoEditViewController.swift; sourceTree = "<group>"; };
-		79DFC44AFE195F73155317D6DF9A1AB4 /* FSCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSCameraView.swift; path = Sources/FSCameraView.swift; sourceTree = "<group>"; };
-		86A2526227873CD7F8D56B4732A28F37 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
-		88904E45871F32675657B2CA60D6ED5A /* CropRectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CropRectView.swift; sourceTree = "<group>"; };
 		88DE953DCBA54F1AB29A5BF81838A26F /* Pods-RMPhotoLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMPhotoLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		91DE31AD5B032EBEB163F4414978040A /* RMPhotoAlbumViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPhotoAlbumViewController.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0DF9F8A3579AD4596519BC5D670A7AF /* Pods-RMPhotoLibrary_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RMPhotoLibrary_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A2BF07432A167300220D1BB9EE7584E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A419D2F38F340E99C437839BB37155C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4767120433E08B91D130BF2262B8770 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A69CAB86E7B17A6FFFBA3FEAA9AC3E70 /* Pods-RMPhotoLibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RMPhotoLibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A8BD716438461F9C44A473E55C1BA39E /* FSAlbumView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSAlbumView.swift; path = Sources/FSAlbumView.swift; sourceTree = "<group>"; };
+		A8E54222BE9B8013724250D3A688CEE0 /* RMPPhotoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPPhotoView.swift; sourceTree = "<group>"; };
 		A9C7C7E0601073A6C6BB63AD6310410C /* Pods-RMPhotoLibrary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMPhotoLibrary_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AB54CCB79E3F33C1BEE9C023741D3B8F /* FusumaViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FusumaViewController.xib; path = Sources/FusumaViewController.xib; sourceTree = "<group>"; };
-		ABF778C0F45E2022CBE3AA9BFF36176C /* FSCameraView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSCameraView.xib; path = Sources/FSCameraView.xib; sourceTree = "<group>"; };
 		ACEA2BB9F39D3C57ECE5D1DADA6FB728 /* Pods-RMPhotoLibrary_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RMPhotoLibrary_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		B4B749E25F5D04FB453503A7AB07DF99 /* FSConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FSConstants.swift; path = Sources/FSConstants.swift; sourceTree = "<group>"; };
-		B8DDBCE83F1EBC8C775E1CD157540207 /* RMPPhotoAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPPhotoAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
-		BA008F1C007E8807FF64BFC1362A4D6B /* Fusuma.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Fusuma.modulemap; sourceTree = "<group>"; };
-		BA0C8ECD69848B454C28733DFAC38420 /* UIImage+Crop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Crop.swift"; sourceTree = "<group>"; };
 		BEDCBB78E875AD853E1262F8B37AFD49 /* Pods-RMPhotoLibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RMPhotoLibrary_Example-dummy.m"; sourceTree = "<group>"; };
 		C133A72BF162E80AA566B0EDBACDF01F /* RMPhotoLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RMPhotoLibrary-dummy.m"; sourceTree = "<group>"; };
-		C76C199A1A5705200C941C67310AF5E0 /* Fusuma-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fusuma-umbrella.h"; sourceTree = "<group>"; };
-		CCA818C7EF3E5050821B52AE5D8BFFE1 /* CropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
-		CDFE40C8943C74EA34D80A011307F382 /* RMPhotoAlbumViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPhotoAlbumViewController.swift; sourceTree = "<group>"; };
-		D85845D4FCEF0FBFACBA02ED26D78942 /* FSAlbumView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FSAlbumView.xib; path = Sources/FSAlbumView.xib; sourceTree = "<group>"; };
-		DDB1B10AFB798D3FBD60ED1A6198FB74 /* Pods_RMPhotoLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RMPhotoLibrary_Example.framework; path = "Pods-RMPhotoLibrary_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2CB604383B6CD861E33C2A983449917 /* RMPPhotoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPPhotoView.swift; sourceTree = "<group>"; };
-		E35A75985359E3B8A95101F0021F7CA5 /* RMPPhotoCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPPhotoCollectionView.swift; sourceTree = "<group>"; };
+		C22C03C5CE0BEDE7F43E1313B6FC5186 /* CropRectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CropRectView.swift; sourceTree = "<group>"; };
+		C29CD8EABD66EC67F36C8B63CB7524A0 /* RMPPhotoCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPPhotoCollectionView.swift; sourceTree = "<group>"; };
+		D2D8E51FF8A3C4799C8AF9F6CEE1F810 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		D557484EB1D69408D04DB4CE8E92DB70 /* Pods_RMPhotoLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RMPhotoLibrary_Example.framework; path = "Pods-RMPhotoLibrary_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B9C4CE299A7146DBCC40C7F79DF1BC /* CropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
 		E62CD32BBFFFFDCC09AB179E5CC7CB5A /* RMPhotoLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RMPhotoLibrary-umbrella.h"; sourceTree = "<group>"; };
 		E636F5382E5B7E5DC47EBDB704671D80 /* Pods-RMPhotoLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RMPhotoLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E733A701D56155CC182AD9C7CBD00215 /* RMPhotoLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RMPhotoLibrary.framework; path = RMPhotoLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA7FA6E88C0969E57484B839E8B87CA /* Pods-RMPhotoLibrary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RMPhotoLibrary_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F2616EB397AD0CAC8AB3DB3997283FA7 /* Pods-RMPhotoLibrary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RMPhotoLibrary_Tests.modulemap"; sourceTree = "<group>"; };
-		F5E36BDF310760D1E6624D1ADCA87583 /* Fusuma-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Fusuma-prefix.pch"; sourceTree = "<group>"; };
-		F6815C2C8005110F55D26A1D91F00480 /* Pods_RMPhotoLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RMPhotoLibrary_Tests.framework; path = "Pods-RMPhotoLibrary_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFAE18599124DC703CCBF6577DE56716 /* Fusuma-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Fusuma-dummy.m"; sourceTree = "<group>"; };
+		F63BB2ACCA8BAE1155E66092BBCC6680 /* Pods_RMPhotoLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RMPhotoLibrary_Tests.framework; path = "Pods-RMPhotoLibrary_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAFECC61BECA1489C20BD23668DE076 /* RMPPhotoAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RMPPhotoAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		332AD6CBCD0253B6CE91DF555781F789 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				539BBDFC2BDD86B65E0C73CE86859D52 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		51F22B0B434F9772E825FA325E1958ED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4119647E4D57365A2BB57EFB82E76116 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		97153F409C43CF18BCFB191BC2C6D925 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,11 +95,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4ED32991A922E26EE7A5D948F4AC68D /* Frameworks */ = {
+		D748BD7DA74A707931DEDD3EAF0619FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CCE1B9DBF44CDBDCE1F6B87C0A89079 /* Foundation.framework in Frameworks */,
+				50B1F1BDD97C4C6567E5311241E8E779 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2F95277CB483F9575351E59452BE31A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA31EDEFA58B20A81A99CCD5A3CB433 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,48 +137,13 @@
 			path = "Example/Pods/Target Support Files/RMPhotoLibrary";
 			sourceTree = "<group>";
 		};
-		4D58681DCE15704F8D11509FFBA3EDBA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2F36177531A733C3D546B1C9C606C974 /* Fusuma.framework */,
-				DDB1B10AFB798D3FBD60ED1A6198FB74 /* Pods_RMPhotoLibrary_Example.framework */,
-				F6815C2C8005110F55D26A1D91F00480 /* Pods_RMPhotoLibrary_Tests.framework */,
-				E733A701D56155CC182AD9C7CBD00215 /* RMPhotoLibrary.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		634FD04952328062E50B021EEF2418AD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BA008F1C007E8807FF64BFC1362A4D6B /* Fusuma.modulemap */,
-				7253081D10D3D5883751DA0068EEE493 /* Fusuma.xcconfig */,
-				FFAE18599124DC703CCBF6577DE56716 /* Fusuma-dummy.m */,
-				F5E36BDF310760D1E6624D1ADCA87583 /* Fusuma-prefix.pch */,
-				C76C199A1A5705200C941C67310AF5E0 /* Fusuma-umbrella.h */,
-				A2BF07432A167300220D1BB9EE7584E5 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Fusuma";
-			sourceTree = "<group>";
-		};
-		72FE1290330B1B0A24DBE63C7A6A2FB0 /* RMPhotoLibrary */ = {
-			isa = PBXGroup;
-			children = (
-				A7B6F0EF8900BA81226A3C903D169733 /* Classes */,
-			);
-			name = RMPhotoLibrary;
-			path = RMPhotoLibrary;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				D5A490624AB1550BDAA0EDD1AA4324FF /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A62EE4F72D50D6A341782D3EC05C8D3D /* Pods */,
-				4D58681DCE15704F8D11509FFBA3EDBA /* Products */,
+				C4F7ECFF2BC5C4F8AD19768C589AC650 /* Products */,
 				0CB6EE7E860E79FDA8103B4B6B83EACA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -248,47 +166,13 @@
 			path = "Target Support Files/Pods-RMPhotoLibrary_Example";
 			sourceTree = "<group>";
 		};
-		997FD9578DEB6F3AEBB0D2F43C5E1269 /* Fusuma */ = {
+		B8832B4AB989987B0216E2949D422EB5 /* RMPhotoLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				A8BD716438461F9C44A473E55C1BA39E /* FSAlbumView.swift */,
-				44CE3667932A9C65A8CB78A2C09DA7AB /* FSAlbumViewCell.swift */,
-				79DFC44AFE195F73155317D6DF9A1AB4 /* FSCameraView.swift */,
-				B4B749E25F5D04FB453503A7AB07DF99 /* FSConstants.swift */,
-				6F1B443A557971434C990E65B8A5AC33 /* FSImageCropView.swift */,
-				614C5C315C9F67A7A273F94BB4035A30 /* FSVideoCameraView.swift */,
-				6868F65959F4ECC606C4AA1D8BAA253B /* FusumaViewController.swift */,
-				D3DC395A4647C206EF0800F672222A2C /* Resources */,
-				634FD04952328062E50B021EEF2418AD /* Support Files */,
+				FA57FB9969EB6098B400E1488B504F39 /* Classes */,
 			);
-			name = Fusuma;
-			path = Fusuma;
-			sourceTree = "<group>";
-		};
-		A62EE4F72D50D6A341782D3EC05C8D3D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				997FD9578DEB6F3AEBB0D2F43C5E1269 /* Fusuma */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		A7B6F0EF8900BA81226A3C903D169733 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				88904E45871F32675657B2CA60D6ED5A /* CropRectView.swift */,
-				CCA818C7EF3E5050821B52AE5D8BFFE1 /* CropView.swift */,
-				86A2526227873CD7F8D56B4732A28F37 /* ReplaceMe.swift */,
-				1485A3F141FE57DC4B779DA483857254 /* ResizeControl.swift */,
-				CDFE40C8943C74EA34D80A011307F382 /* RMPhotoAlbumViewController.swift */,
-				740766154CACD70EFE2F37C60C39A790 /* RMPhotoEditViewController.swift */,
-				B8DDBCE83F1EBC8C775E1CD157540207 /* RMPPhotoAlbumCollectionViewCell.swift */,
-				E35A75985359E3B8A95101F0021F7CA5 /* RMPPhotoCollectionView.swift */,
-				E2CB604383B6CD861E33C2A983449917 /* RMPPhotoView.swift */,
-				BA0C8ECD69848B454C28733DFAC38420 /* UIImage+Crop.swift */,
-			);
-			name = Classes;
-			path = Classes;
+			name = RMPhotoLibrary;
+			path = RMPhotoLibrary;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -299,25 +183,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C4F7ECFF2BC5C4F8AD19768C589AC650 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D557484EB1D69408D04DB4CE8E92DB70 /* Pods_RMPhotoLibrary_Example.framework */,
+				F63BB2ACCA8BAE1155E66092BBCC6680 /* Pods_RMPhotoLibrary_Tests.framework */,
+				3B6CC2EE53CFE1649527491B3257D1DE /* RMPhotoLibrary.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		D3DC395A4647C206EF0800F672222A2C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				427FDC4E6130005591A94B287587AC3B /* Assets.xcassets */,
-				D85845D4FCEF0FBFACBA02ED26D78942 /* FSAlbumView.xib */,
-				2F9E400F4EBB40F53F48F01359FD2AAD /* FSAlbumViewCell.xib */,
-				ABF778C0F45E2022CBE3AA9BFF36176C /* FSCameraView.xib */,
-				4762C86774178F707DCE9F3ABA2DFDF5 /* FSVideoCameraView.xib */,
-				AB54CCB79E3F33C1BEE9C023741D3B8F /* FusumaViewController.xib */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		D5A490624AB1550BDAA0EDD1AA4324FF /* Development Pods */ = {
@@ -331,7 +212,7 @@
 		ED03ED6B5C35AE9BAA99EB710C61B25D /* RMPhotoLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				72FE1290330B1B0A24DBE63C7A6A2FB0 /* RMPhotoLibrary */,
+				B8832B4AB989987B0216E2949D422EB5 /* RMPhotoLibrary */,
 				2CA82D7FCBBD4875F0D14B17BA99951B /* Support Files */,
 			);
 			name = RMPhotoLibrary;
@@ -356,30 +237,34 @@
 			path = "Target Support Files/Pods-RMPhotoLibrary_Tests";
 			sourceTree = "<group>";
 		};
+		FA57FB9969EB6098B400E1488B504F39 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C22C03C5CE0BEDE7F43E1313B6FC5186 /* CropRectView.swift */,
+				D5B9C4CE299A7146DBCC40C7F79DF1BC /* CropView.swift */,
+				D2D8E51FF8A3C4799C8AF9F6CEE1F810 /* ReplaceMe.swift */,
+				22C1128761C5BDF88B9104788C0430D4 /* ResizeControl.swift */,
+				294743996FDDF30C77014AAF414709C8 /* RMPCropView.swift */,
+				91DE31AD5B032EBEB163F4414978040A /* RMPhotoAlbumViewController.swift */,
+				695F613AD3A7BF04CAC4FB1452254DFD /* RMPhotoEditSimpleViewController.swift */,
+				0B097D3021AA498EEF03B4C40E1BCA67 /* RMPhotoEditViewController.swift */,
+				FCAFECC61BECA1489C20BD23668DE076 /* RMPPhotoAlbumCollectionViewCell.swift */,
+				C29CD8EABD66EC67F36C8B63CB7524A0 /* RMPPhotoCollectionView.swift */,
+				A8E54222BE9B8013724250D3A688CEE0 /* RMPPhotoView.swift */,
+				17F9E68FF276CD8D56E60D50855FA2B6 /* UIImage+Crop.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4F652139E6F1604A2AF6F43B1E1C8FA6 /* Headers */ = {
+		9953361A249FFDD3EA09FD2D05102496 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC0DAD678A2792CD70B87FA5835C379D /* Pods-RMPhotoLibrary_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7158FEC466025B95E36CEACB736FF70B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA87C8542F368CC301BCF815CACF5850 /* Fusuma-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A767E807CBED87EBE81452C1717124E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				68519EE36E8C5FD508B1DC18E248B666 /* RMPhotoLibrary-umbrella.h in Headers */,
+				7CFF51C04E6AD066754DF87C2D961D5C /* RMPhotoLibrary-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,34 +276,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CBD74F068951887699CFCC2342E92BC5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01C65135DEC544875B4BD73F56CE24E /* Pods-RMPhotoLibrary_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3E0D8640A124012AB6F0A9F775A38285 /* Fusuma */ = {
+		4AEBCD76567DB69CD1C03D3769F9D390 /* Pods-RMPhotoLibrary_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 701EE424EC02B83CAB3D7F07E65B18F3 /* Build configuration list for PBXNativeTarget "Fusuma" */;
+			buildConfigurationList = 83251D9A2EFD8C9DE5B4E117E2D75E31 /* Build configuration list for PBXNativeTarget "Pods-RMPhotoLibrary_Example" */;
 			buildPhases = (
-				7586AED8D8B6EDCD6A3843D1E241C0B8 /* Sources */,
-				332AD6CBCD0253B6CE91DF555781F789 /* Frameworks */,
-				30B65FFC8989F13FD23CDB867580F8C9 /* Resources */,
-				7158FEC466025B95E36CEACB736FF70B /* Headers */,
+				69164038840A384937B9802923776A6B /* Sources */,
+				F2F95277CB483F9575351E59452BE31A /* Frameworks */,
+				CBD74F068951887699CFCC2342E92BC5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				96DA8CF2623080A0AC14DCEF808CF157 /* PBXTargetDependency */,
 			);
-			name = Fusuma;
-			productName = Fusuma;
-			productReference = 2F36177531A733C3D546B1C9C606C974 /* Fusuma.framework */;
+			name = "Pods-RMPhotoLibrary_Example";
+			productName = "Pods-RMPhotoLibrary_Example";
+			productReference = D557484EB1D69408D04DB4CE8E92DB70 /* Pods_RMPhotoLibrary_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6BA2CF895E2ADB088120590A898005F0 /* RMPhotoLibrary */ = {
+		8758B43A7BC5A9CA75E89E2C327D1D69 /* RMPhotoLibrary */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 251D6C36A29A07789E2ED7817492C299 /* Build configuration list for PBXNativeTarget "RMPhotoLibrary" */;
+			buildConfigurationList = 26B7E5358F8F8897242FA1091B290FE5 /* Build configuration list for PBXNativeTarget "RMPhotoLibrary" */;
 			buildPhases = (
-				61981F8CD05B2C2ABFDEAC3B653BEE84 /* Sources */,
-				B4ED32991A922E26EE7A5D948F4AC68D /* Frameworks */,
-				8A767E807CBED87EBE81452C1717124E /* Headers */,
+				EF810686F3EB82AAC915CC5637A7F098 /* Sources */,
+				D748BD7DA74A707931DEDD3EAF0619FB /* Frameworks */,
+				9953361A249FFDD3EA09FD2D05102496 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -426,7 +319,7 @@
 			);
 			name = RMPhotoLibrary;
 			productName = RMPhotoLibrary;
-			productReference = E733A701D56155CC182AD9C7CBD00215 /* RMPhotoLibrary.framework */;
+			productReference = 3B6CC2EE53CFE1649527491B3257D1DE /* RMPhotoLibrary.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9E98598681D971064D84E34587DD3F36 /* Pods-RMPhotoLibrary_Tests */ = {
@@ -443,26 +336,7 @@
 			);
 			name = "Pods-RMPhotoLibrary_Tests";
 			productName = "Pods-RMPhotoLibrary_Tests";
-			productReference = F6815C2C8005110F55D26A1D91F00480 /* Pods_RMPhotoLibrary_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AB961FC0051CD4C96824E8CF134DD363 /* Pods-RMPhotoLibrary_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8CD1345E6CC136E89D0B06EF4446AA9D /* Build configuration list for PBXNativeTarget "Pods-RMPhotoLibrary_Example" */;
-			buildPhases = (
-				EED015692A51439322B9FAF4DFB27C94 /* Sources */,
-				51F22B0B434F9772E825FA325E1958ED /* Frameworks */,
-				4F652139E6F1604A2AF6F43B1E1C8FA6 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F801520AA530DD7BC9F5C1F494AB518A /* PBXTargetDependency */,
-				89F769B644986C59C96C1377E4032628 /* PBXTargetDependency */,
-			);
-			name = "Pods-RMPhotoLibrary_Example";
-			productName = "Pods-RMPhotoLibrary_Example";
-			productReference = DDB1B10AFB798D3FBD60ED1A6198FB74 /* Pods_RMPhotoLibrary_Example.framework */;
+			productReference = F63BB2ACCA8BAE1155E66092BBCC6680 /* Pods_RMPhotoLibrary_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -482,33 +356,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 4D58681DCE15704F8D11509FFBA3EDBA /* Products */;
+			productRefGroup = C4F7ECFF2BC5C4F8AD19768C589AC650 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3E0D8640A124012AB6F0A9F775A38285 /* Fusuma */,
-				AB961FC0051CD4C96824E8CF134DD363 /* Pods-RMPhotoLibrary_Example */,
+				4AEBCD76567DB69CD1C03D3769F9D390 /* Pods-RMPhotoLibrary_Example */,
 				9E98598681D971064D84E34587DD3F36 /* Pods-RMPhotoLibrary_Tests */,
-				6BA2CF895E2ADB088120590A898005F0 /* RMPhotoLibrary */,
+				8758B43A7BC5A9CA75E89E2C327D1D69 /* RMPhotoLibrary */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		30B65FFC8989F13FD23CDB867580F8C9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F8F2B8EF3A92B1E031FA17F874B40D98 /* Assets.xcassets in Resources */,
-				1C82A350630273F914125DBDEA52F683 /* FSAlbumView.xib in Resources */,
-				98C0F05CF40E7E1C111B0599ABE5BCAD /* FSAlbumViewCell.xib in Resources */,
-				E76B14332EA4BF464EBA72C31769A619 /* FSCameraView.xib in Resources */,
-				13FD4829C1935D33FF0B0E858B84482D /* FSVideoCameraView.xib in Resources */,
-				C5C88F4AB62FA845795ACAE292A05E5B /* FusumaViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		127A20250102A3D86ACEE247503D740A /* Sources */ = {
@@ -519,61 +376,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61981F8CD05B2C2ABFDEAC3B653BEE84 /* Sources */ = {
+		69164038840A384937B9802923776A6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A3EFC954112A2E8A32A12493300D21E /* CropRectView.swift in Sources */,
-				61B4EA78FE2018BBF608279AC88D153B /* CropView.swift in Sources */,
-				6BBB58832D4274B411F546731324F9BD /* ReplaceMe.swift in Sources */,
-				43950B8A9095FF0BF33D1F286579CAA3 /* ResizeControl.swift in Sources */,
-				4739C512EE572762EEA50CE62A8792FB /* RMPhotoAlbumViewController.swift in Sources */,
-				7F67F532AE76F2FF3F2288F3A8691AD0 /* RMPhotoEditViewController.swift in Sources */,
-				29D80DC446204A2A7FC052E538CDA32F /* RMPhotoLibrary-dummy.m in Sources */,
-				E1133897E27D38F33845EC57D4E8D9BB /* RMPPhotoAlbumCollectionViewCell.swift in Sources */,
-				231223AA946BAEDF7401CB69A3A23E1A /* RMPPhotoCollectionView.swift in Sources */,
-				17A289BEA8EB908CBB7C5F86CA034EFD /* RMPPhotoView.swift in Sources */,
-				8126CCD976D0EC592491733FE0BF549B /* UIImage+Crop.swift in Sources */,
+				5FBD342DF6CC913D64BF9D780CA8AB40 /* Pods-RMPhotoLibrary_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7586AED8D8B6EDCD6A3843D1E241C0B8 /* Sources */ = {
+		EF810686F3EB82AAC915CC5637A7F098 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8B2CD64AE5925518C1FD441C723E77 /* FSAlbumView.swift in Sources */,
-				37D4EF5938F8495CE32638F8BEB53550 /* FSAlbumViewCell.swift in Sources */,
-				E8CD91CC081DE8166DB3964B70DD91F3 /* FSCameraView.swift in Sources */,
-				97D850D3836A89967D5A350E84996568 /* FSConstants.swift in Sources */,
-				76C218BD1C4FED73A5D8DE0B44133A10 /* FSImageCropView.swift in Sources */,
-				5876F184D9754E4DFBAD67EEF32FCF9C /* FSVideoCameraView.swift in Sources */,
-				484B8C39828B296D71146C51A0904FC7 /* Fusuma-dummy.m in Sources */,
-				337EBB7E279C5D1697601D3C6A696A46 /* FusumaViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EED015692A51439322B9FAF4DFB27C94 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B62C192F6890740E5B439019D04ED009 /* Pods-RMPhotoLibrary_Example-dummy.m in Sources */,
+				0A41BE1F6D3B3C9748DBDA0BB95CC0A3 /* CropRectView.swift in Sources */,
+				07169488FD3A1F6998B0485F8D9454FD /* CropView.swift in Sources */,
+				9140757166FC8579AFA7DCA9EA5EF34C /* ReplaceMe.swift in Sources */,
+				2747F2898E85FBD5C4DDA255DB2AD2C3 /* ResizeControl.swift in Sources */,
+				6EBE8856821CE42C28032F07D052DB68 /* RMPCropView.swift in Sources */,
+				67036EA06C367063C0B1269F448D7084 /* RMPhotoAlbumViewController.swift in Sources */,
+				2725AF61D3169F030E2A2F61125C2BCE /* RMPhotoEditSimpleViewController.swift in Sources */,
+				00008792C3181DCB7E06B2F74AD0CE52 /* RMPhotoEditViewController.swift in Sources */,
+				C047F99C229B5DF456D6FFC0213D4AFD /* RMPhotoLibrary-dummy.m in Sources */,
+				9558C3ECAA2A2D98490CE351472811FD /* RMPPhotoAlbumCollectionViewCell.swift in Sources */,
+				A6C1E6B2A2A81E9B4808881C1C4E912B /* RMPPhotoCollectionView.swift in Sources */,
+				25217B0408A25C05117C2251057F7C46 /* RMPPhotoView.swift in Sources */,
+				EE2F2B0C93088A36D651609AF69B70B7 /* UIImage+Crop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		89F769B644986C59C96C1377E4032628 /* PBXTargetDependency */ = {
+		96DA8CF2623080A0AC14DCEF808CF157 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RMPhotoLibrary;
-			target = 6BA2CF895E2ADB088120590A898005F0 /* RMPhotoLibrary */;
-			targetProxy = EC8996BAF5D6810C23731DEEC9634F27 /* PBXContainerItemProxy */;
-		};
-		F801520AA530DD7BC9F5C1F494AB518A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Fusuma;
-			target = 3E0D8640A124012AB6F0A9F775A38285 /* Fusuma */;
-			targetProxy = 1A55B101482989E855936B7CAE5C7542 /* PBXContainerItemProxy */;
+			target = 8758B43A7BC5A9CA75E89E2C327D1D69 /* RMPhotoLibrary */;
+			targetProxy = 7DD42537270075313A4F82B499CFE542 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -608,41 +446,6 @@
 				PRODUCT_NAME = Pods_RMPhotoLibrary_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		15F0892A76CAA610C53AE470E2AB188C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7253081D10D3D5883751DA0068EEE493 /* Fusuma.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Fusuma/Fusuma-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Fusuma/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Fusuma/Fusuma.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Fusuma;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -697,6 +500,40 @@
 			};
 			name = Debug;
 		};
+		4122F0DC9661203C4AAF0717D86A1E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03749DEB0AB074167838587F8A6362AA /* RMPhotoLibrary.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RMPhotoLibrary/RMPhotoLibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMPhotoLibrary/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RMPhotoLibrary/RMPhotoLibrary.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RMPhotoLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -741,45 +578,7 @@
 			};
 			name = Release;
 		};
-		885F9855B9FE1AFCAF92C0C44F7E9C0C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D787A7D0D5D98303ED116CEE59938B0 /* Pods-RMPhotoLibrary_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RMPhotoLibrary_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-RMPhotoLibrary_Example/Pods-RMPhotoLibrary_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_RMPhotoLibrary_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9F9BD057ABF10CD5CD7412B0CC745B7C /* Debug */ = {
+		7A3D9FE2550D6E9760D18BE780C3F2CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03749DEB0AB074167838587F8A6362AA /* RMPhotoLibrary.xcconfig */;
 			buildSettings = {
@@ -814,9 +613,9 @@
 			};
 			name = Debug;
 		};
-		B35D57BB2B5B8AF4AAAE906F97594640 /* Release */ = {
+		BF487A771518FABCD88DC22E07D5FA6B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03749DEB0AB074167838587F8A6362AA /* RMPhotoLibrary.xcconfig */;
+			baseConfigurationReference = 6D787A7D0D5D98303ED116CEE59938B0 /* Pods-RMPhotoLibrary_Example.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -830,14 +629,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RMPhotoLibrary/RMPhotoLibrary-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RMPhotoLibrary/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-RMPhotoLibrary_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RMPhotoLibrary/RMPhotoLibrary.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RMPhotoLibrary_Example/Pods-RMPhotoLibrary_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RMPhotoLibrary;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RMPhotoLibrary_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -884,41 +687,7 @@
 			};
 			name = Release;
 		};
-		CC27FB56DEF8B98076DBDD3BC3C94F84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7253081D10D3D5883751DA0068EEE493 /* Fusuma.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Fusuma/Fusuma-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Fusuma/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Fusuma/Fusuma.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Fusuma;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DA122267F7C12CCF762D2D9798273C65 /* Debug */ = {
+		E610D0EE2E1C6048CADABBBEC0B7E440 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1A2C6923BE9660E2DCEA9B9A618A5BAD /* Pods-RMPhotoLibrary_Example.debug.xcconfig */;
 			buildSettings = {
@@ -960,11 +729,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		251D6C36A29A07789E2ED7817492C299 /* Build configuration list for PBXNativeTarget "RMPhotoLibrary" */ = {
+		26B7E5358F8F8897242FA1091B290FE5 /* Build configuration list for PBXNativeTarget "RMPhotoLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9F9BD057ABF10CD5CD7412B0CC745B7C /* Debug */,
-				B35D57BB2B5B8AF4AAAE906F97594640 /* Release */,
+				7A3D9FE2550D6E9760D18BE780C3F2CD /* Debug */,
+				4122F0DC9661203C4AAF0717D86A1E62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -978,15 +747,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		701EE424EC02B83CAB3D7F07E65B18F3 /* Build configuration list for PBXNativeTarget "Fusuma" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				15F0892A76CAA610C53AE470E2AB188C /* Debug */,
-				CC27FB56DEF8B98076DBDD3BC3C94F84 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		738887F8FF0A1739E1FDBD63BA3E53AB /* Build configuration list for PBXNativeTarget "Pods-RMPhotoLibrary_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -996,11 +756,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CD1345E6CC136E89D0B06EF4446AA9D /* Build configuration list for PBXNativeTarget "Pods-RMPhotoLibrary_Example" */ = {
+		83251D9A2EFD8C9DE5B4E117E2D75E31 /* Build configuration list for PBXNativeTarget "Pods-RMPhotoLibrary_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA122267F7C12CCF762D2D9798273C65 /* Debug */,
-				885F9855B9FE1AFCAF92C0C44F7E9C0C /* Release */,
+				E610D0EE2E1C6048CADABBBEC0B7E440 /* Debug */,
+				BF487A771518FABCD88DC22E07D5FA6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

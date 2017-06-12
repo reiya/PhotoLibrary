@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="912.79999999999995" y="369.71514242878561"/>
         </scene>
-        <!--Photo Edit View Controller-->
+        <!--Photo Edit Simple View Controller-->
         <scene sceneID="N7G-bz-GyD">
             <objects>
-                <viewController storyboardIdentifier="RMPhotoEditViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c5k-Yd-bbJ" customClass="RMPhotoEditViewController" customModule="RMPhotoLibrary" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RMPhotoEditViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c5k-Yd-bbJ" customClass="RMPhotoEditSimpleViewController" customModule="RMPhotoLibrary" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oHN-sW-OrO"/>
                         <viewControllerLayoutGuide type="bottom" id="94m-3r-IPy"/>
@@ -159,12 +159,27 @@
                     <view key="view" contentMode="scaleToFill" id="XQ7-9v-ddw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="308.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBv-8M-Mfo" customClass="RMPCropView" customModule="RMPhotoLibrary">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="208.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HBv-8M-Mfo" secondAttribute="trailing" id="Sc7-uL-QFH"/>
+                            <constraint firstItem="94m-3r-IPy" firstAttribute="top" secondItem="HBv-8M-Mfo" secondAttribute="bottom" constant="100" id="SsU-DI-NPs"/>
+                            <constraint firstItem="HBv-8M-Mfo" firstAttribute="top" secondItem="oHN-sW-OrO" secondAttribute="bottom" id="aZo-qF-G88"/>
+                            <constraint firstItem="HBv-8M-Mfo" firstAttribute="leading" secondItem="XQ7-9v-ddw" secondAttribute="leading" id="b98-Qf-fQZ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cropView" destination="HBv-8M-Mfo" id="8bO-mQ-sXa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rcg-NU-ZYJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912.79999999999995" y="14.392803598200901"/>
+            <point key="canvasLocation" x="912.79999999999995" y="13.943028485757123"/>
         </scene>
         <!--Next View Controller-->
         <scene sceneID="fHZ-hq-gP9">
@@ -179,15 +194,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="grb-n0-Oit">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <rect key="frame" x="16" y="269" width="343" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="grb-n0-Oit" firstAttribute="leading" secondItem="9nj-2C-DfV" secondAttribute="leadingMargin" constant="51" id="13s-vU-01s"/>
+                            <constraint firstItem="grb-n0-Oit" firstAttribute="leading" secondItem="9nj-2C-DfV" secondAttribute="leadingMargin" id="13s-vU-01s"/>
                             <constraint firstItem="KgU-f7-j8V" firstAttribute="top" secondItem="grb-n0-Oit" secondAttribute="bottom" constant="270" id="L2R-gI-SWK"/>
                             <constraint firstItem="grb-n0-Oit" firstAttribute="top" secondItem="fsX-bV-Ntr" secondAttribute="bottom" constant="249" id="QV6-6t-Kzr"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="grb-n0-Oit" secondAttribute="trailing" constant="52" id="mmj-hM-lQK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="grb-n0-Oit" secondAttribute="trailing" id="mmj-hM-lQK"/>
                         </constraints>
                     </view>
                     <connections>

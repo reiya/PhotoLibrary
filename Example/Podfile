@@ -1,8 +1,8 @@
 use_frameworks!
+swift_version = '3.0'
 
 target 'RMPhotoLibrary_Example' do
   pod 'RMPhotoLibrary', :path => '../'
-  pod 'Fusuma'
 
   target 'RMPhotoLibrary_Tests' do
     inherit! :search_paths
