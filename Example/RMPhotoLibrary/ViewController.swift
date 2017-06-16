@@ -9,50 +9,33 @@
 import UIKit
 import RMPhotoLibrary
 
-class ViewController: UIViewController,RMPhotoAlbumViewControllerDelegate,RMPhotoEditViewControllerDelegate{
+class ViewController: UIViewController,RMPhotoAlbumViewControllerDelegate{
    
-//    var photoEditVC: RMPhotoEditViewController!
     var photoEditSimpleVC: RMPhotoEditSimpleViewController!
     var photoAlbumVC: RMPhotoAlbumViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        photoEditVC = self.childViewControllers[0] as! RMPhotoEditViewController
-//        photoEditVC.showsGridMinor = false // gesture grid OFF
-//        photoEditVC.showsGridMajor = false // defalt grid OFF
-//        photoEditVC.keepAspectRatio = true
-//        photoEditVC.delegate = self
-        
+    
         photoEditSimpleVC = self.childViewControllers[0] as! RMPhotoEditSimpleViewController
-        //photoEditVC.cropRect = CGRect(x: 0, y: 100, width: 100, height: 100)
-        
+
         photoAlbumVC = self.childViewControllers[1] as! RMPhotoAlbumViewController
         photoAlbumVC.delegate = self
     }
     
     @IBAction func buttonRate(sender : AnyObject) {
-//        photoEditVC.rate()
+
     }
     
     @IBAction func goNext(_ sender:UIButton) {
-//        photoEditVC.doneImage()
-        
         let next:NextViewController = storyboard!.instantiateViewController(withIdentifier: "nextViewController") as! NextViewController
         next.image = photoEditSimpleVC.getCrapViewImage()
         self.present(next,animated: true, completion: nil)
         
     }
     
-    func send() {
-        
-    }
-    
     func sendImage(image: UIImage) {
-//        photoEditVC.image = image
         photoEditSimpleVC.image = image
-        
-        //photoEditVC.cropRect = CGRect(x: 0, y: 100, width: 100, height: 100)
     }
     
     func cropViewController(_ controller: RMPhotoEditViewController, didFinishCroppingImage image: UIImage) {

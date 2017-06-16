@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RMPhotoLibrary'
-  s.version          = '0.5.2'
+  s.version          = '1.0.0'
   s.summary          = 'RMPhotoLibrary. Image cropping and fit library'
 
 # This description is used to generate tags and improve search results.

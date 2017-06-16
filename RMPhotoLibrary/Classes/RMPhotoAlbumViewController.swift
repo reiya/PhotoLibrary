@@ -11,12 +11,8 @@ import Photos
 
 public protocol RMPhotoAlbumViewControllerDelegate: class {
     func sendImage(image: UIImage)
-    func send()
 }
 public extension RMPhotoAlbumViewControllerDelegate {
-    public func send(){
-        
-    }
     public func sendImage(image: UIImage) {
         
     }
@@ -45,8 +41,10 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
         
         // UICollectionViewCellのマージン等の設定
         let flowLayout: UICollectionViewFlowLayout! = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: 70 ,
-                                     height: 70 )
+        let cWidth = self.view.frame.size.width/4
+        let cHeight = self.view.frame.size.width/4
+        flowLayout.itemSize = CGSize(width: cWidth ,
+                                     height: cHeight )
         flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         flowLayout.minimumInteritemSpacing = 0
         flowLayout.minimumLineSpacing = 0
@@ -128,8 +126,6 @@ public class RMPhotoAlbumViewController: UIViewController ,UICollectionViewDeleg
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! RMPPhotoAlbumCollectionViewCell
         setConfigure(assets: photoAssets[indexPath.row])
-
-        delegate.send()
     }
     
     func setConfigure(assets: PHAsset) {

@@ -19,6 +19,10 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "RMPhotoLibrary"
 ```
+## Usage
+ViewController.swift
+Main.storyboard
+Us to confirm
 
 ## Author
 
